@@ -1,5 +1,6 @@
 package training;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Employee {
@@ -20,5 +21,11 @@ public class Employee {
 
     public void setIntern(final Boolean intern) {
         this.intern = intern;
+    }
+
+    public BigDecimal calculateIncome(EmployeeIncome employeeIncome) {
+
+            return employeeIncome.computeIncome(this);
+
     }
 }
